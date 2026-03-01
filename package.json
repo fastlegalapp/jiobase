@@ -8,11 +8,13 @@
     "deploy": "pnpm run ship",
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
-    "ship": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/api run deploy && pnpm --filter @jiobase/proxy run deploy && pnpm --filter @jiobase/web run deploy",
+    "ship": "pnpm run ship:workers",
     "ship:api": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/api run deploy",
     "ship:proxy": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/proxy run deploy",
     "ship:web": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/web run deploy",
-    "ship:no-api": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/proxy run deploy && pnpm --filter @jiobase/web run deploy"
+    "ship:no-api": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/proxy run deploy && pnpm --filter @jiobase/web run deploy",
+    "ship:workers": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/api run deploy && pnpm --filter @jiobase/proxy run deploy",
+    "ship:full": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/api run deploy && pnpm --filter @jiobase/proxy run deploy && pnpm --filter @jiobase/web run deploy"
   },
   "devDependencies": {
     "turbo": "^2.4.0",
