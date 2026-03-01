@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
+    "deploy": "pnpm run ship",
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
     "ship": "pnpm --filter @jiobase/shared build && pnpm --filter @jiobase/api run deploy && pnpm --filter @jiobase/proxy run deploy && pnpm --filter @jiobase/web run deploy",
