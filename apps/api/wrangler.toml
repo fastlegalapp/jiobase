@@ -3,9 +3,9 @@ main = "src/index.ts"
 compatibility_date = "2025-02-27"
 compatibility_flags = ["nodejs_compat"]
 
-# Add jiobase.com to Cloudflare (Workers & Pages > Add a site) to enable custom routes
+# Add your domain to Cloudflare (Workers & Pages > Add a site), then uncomment and replace YOUR_DOMAIN:
 # routes = [
-#   { pattern = "api.jiobase.com/*", zone_name = "jiobase.com" }
+#   { pattern = "api.YOUR_DOMAIN/*", zone_name = "YOUR_DOMAIN" }
 # ]
 
 [[d1_databases]]
@@ -20,4 +20,5 @@ id = "e940e0cfa1e6436382e40a0cafdea6b5"
 
 [vars]
 ENVIRONMENT = "production"
-APP_URL = "https://app.jiobase.com"
+# Replace with your domain, e.g. https://app.your-domain.com
+APP_URL = "https://app.your-domain.com"

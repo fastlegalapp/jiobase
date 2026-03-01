@@ -3,9 +3,9 @@ main = "src/index.ts"
 compatibility_date = "2025-02-27"
 compatibility_flags = ["nodejs_compat"]
 
-# Add jiobase.com to Cloudflare (Workers & Pages > Add a site) to enable custom routes
+# Add your domain to Cloudflare (Workers & Pages > Add a site), then uncomment and replace YOUR_DOMAIN:
 # routes = [
-#   { pattern = "*.jiobase.com/*", zone_name = "jiobase.com" }
+#   { pattern = "*.YOUR_DOMAIN/*", zone_name = "YOUR_DOMAIN" }
 # ]
 
 [[kv_namespaces]]
@@ -23,4 +23,5 @@ id = "915a6a60051e4ee18da82b14dc9a3bd7"
 
 [vars]
 ENVIRONMENT = "production"
-PROXY_DOMAIN = "jiobase.com"
+# Replace with your domain, e.g. your-domain.com (used for *.your-domain.com proxy subdomains)
+PROXY_DOMAIN = "your-domain.com"

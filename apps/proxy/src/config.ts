@@ -8,7 +8,7 @@ export async function resolveConfig(
   hostname: string,
   env: Env
 ): Promise<{ config: ProxyConfig; slug: string } | null> {
-  const proxyDomain = env.PROXY_DOMAIN || 'jiobase.com';
+  const proxyDomain = env.PROXY_DOMAIN || 'your-domain.com';
 
   // Reserved subdomains — not proxy targets
   const RESERVED = ['api', 'app', 'www'];
