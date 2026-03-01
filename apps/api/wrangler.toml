@@ -3,9 +3,10 @@ main = "src/index.ts"
 compatibility_date = "2025-02-27"
 compatibility_flags = ["nodejs_compat"]
 
-routes = [
-  { pattern = "api.jiobase.com/*", zone_name = "jiobase.com" }
-]
+# Add jiobase.com to Cloudflare (Workers & Pages > Add a site) to enable custom routes
+# routes = [
+#   { pattern = "api.jiobase.com/*", zone_name = "jiobase.com" }
+# ]
 
 [[d1_databases]]
 binding = "DB"
