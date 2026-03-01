@@ -10,7 +10,7 @@ routes = [
 [[d1_databases]]
 binding = "DB"
 database_name = "jiobase-db"
-database_id = "f3c420b4-f034-4dcd-8aaa-2af9991df82a"
+database_id = "fec63809-e1fa-48eb-80b5-a5754fe9bc70"
 migrations_dir = "drizzle"
 
 [[kv_namespaces]]
