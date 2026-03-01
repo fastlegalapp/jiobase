@@ -9,11 +9,11 @@ routes = [
 
 [[kv_namespaces]]
 binding = "PROXY_CONFIG"
-id = "7ab7e07aa2ae4cada455bd45e59efa14"
+id = "e940e0cfa1e6436382e40a0cafdea6b5"
 
 [[kv_namespaces]]
 binding = "RATE_LIMITS"
-id = "72e372abe2c748beb8a23608623381ad"
+id = "915a6a60051e4ee18da82b14dc9a3bd7"
 
 # Analytics Engine for request metrics
 # [[analytics_engine_datasets]]
